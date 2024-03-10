@@ -6,3 +6,8 @@
 
 <img width="801" alt="image" src="https://github.com/shalini47ch/chit-chat/assets/60210475/9d662a29-d773-4853-8194-8d40946a08f7">
 
+## The password is encrypted using the bcryptjs
+
+<img width="796" alt="image" src="https://github.com/shalini47ch/chit-chat/assets/60210475/4a26ae0a-02ea-4dcb-a73f-274531856ee3">
+
+
