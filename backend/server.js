@@ -1,5 +1,9 @@
 const express = require("express");
 const { chats } = require("../backend/data/data");
+const {
+  notFound,
+  errorHandler,
+} = require("../backend/middleware/errorMiddleware");
 const dotenv = require("dotenv");
 const connectdb = require("./config/db");
 const app = express();
@@ -31,5 +35,9 @@ app.get("/", (req, res) => {
 app.use(express.json());
 
 app.use("/api/user", userRoutes);
+
+//here we will add two middlewares for error handling
+app.use(notFound); //first it will go to our not found and after that even if error occurs
+app.use(errorHandler); //then this error handler will be implemented
 
 app.listen(PORT, console.log(`Server starting on port ${PORT}`.cyan.bold));

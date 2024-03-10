@@ -48,4 +48,36 @@ const registerUser = asyncHandler(async (req, res) => {
 
 });
 
-module.exports={registerUser}
+
+//similarly create a function for auth user 
+//here we will perform the authentication for our user
+
+const authUser=asyncHandler(async(req,res)=>{
+  const {email,password}=req.body;
+
+  const user=await User.findOne({email})
+
+  //now here we will check if the user already exists and if the password entered is equal to the password in our mongodb database
+  if(user && (await user.matchPassword(password))){
+    res.json({
+      _id: user._id,
+      name: user.name,
+      email: user.email,
+      password: user.password,
+      pic: user.pic,
+      token:generateToken(user._id)
+
+
+    })
+
+  }
+  else{
+    res.status(401);
+    throw new Error("enter valid email or password");
+
+  }
+
+
+})
+
+module.exports={registerUser,authUser}
