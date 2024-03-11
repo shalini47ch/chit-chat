@@ -38,6 +38,11 @@
 
 <img width="669" alt="image" src="https://github.com/shalini47ch/chit-chat/assets/60210475/b072f190-d6bd-4fd4-af56-8148aef85adf">
 
+## User removed from group successfully 
+
+<img width="886" alt="image" src="https://github.com/shalini47ch/chit-chat/assets/60210475/24a749ac-e773-42e6-9b6e-8d71efc81551">
+
+
 
 
 
