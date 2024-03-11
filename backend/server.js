@@ -11,6 +11,7 @@ const colors = require("colors");
 dotenv.config();
 const PORT = process.env.PORT || 5000;
 const userRoutes = require("./routes/userRoutes");
+const chatRoutes = require("./routes/chatRoutes");
 connectdb();
 app.get("/", (req, res) => {
   res.send("Api running successfully");
@@ -35,6 +36,8 @@ app.get("/", (req, res) => {
 app.use(express.json());
 
 app.use("/api/user", userRoutes);
+
+app.use("/api/chat", chatRoutes);
 
 //here we will add two middlewares for error handling
 app.use(notFound); //first it will go to our not found and after that even if error occurs

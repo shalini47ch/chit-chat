@@ -1,7 +1,7 @@
 //here we will create the logic for registration page
 const asyncHandler = require("express-async-handler");
 const User = require("../models/userModel");
-const generateToken=require("../config/generateToken")
+const generateToken = require("../config/generateToken");
 
 //using async handler so that all the errors can be accumulated at one place
 
@@ -37,47 +37,57 @@ const registerUser = asyncHandler(async (req, res) => {
       email: user.email,
       password: user.password,
       pic: user.pic,
-      token:generateToken(user._id)
+      token: generateToken(user._id),
     });
   } else {
     //this is the case when the user doesnt exist
     res.status(400);
     throw new Error("failed to create the user");
   }
-
-
 });
 
-
-//similarly create a function for auth user 
+//similarly create a function for auth user
 //here we will perform the authentication for our user
 
-const authUser=asyncHandler(async(req,res)=>{
-  const {email,password}=req.body;
+const authUser = asyncHandler(async (req, res) => {
+  const { email, password } = req.body;
 
-  const user=await User.findOne({email})
+  const user = await User.findOne({ email });
 
   //now here we will check if the user already exists and if the password entered is equal to the password in our mongodb database
-  if(user && (await user.matchPassword(password))){
+  if (user && (await user.matchPassword(password))) {
     res.json({
       _id: user._id,
       name: user.name,
       email: user.email,
       password: user.password,
       pic: user.pic,
-      token:generateToken(user._id)
-
-
-    })
-
-  }
-  else{
+      token: generateToken(user._id),
+    });
+  } else {
     res.status(401);
     throw new Error("enter valid email or password");
-
   }
+});
 
+//here write a function to get all the users
+//here we will perform the query like ?search these type of queries will help us to find the users
+const allUsers = asyncHandler(async (req, res) => {
+  //req.query will give us the output of the queries we use
+  //here we will use or operator to search for the query with specific name and email
+  //$i is for case sensitivity
+  const keyword = req.query.search
+    ? {
+        $or: [
+          { name: { $regex: req.query.search, $options: "i" } },
+          { email: { $regex: req.query.search, $options: "i" } },
+        ],
+      }
+    : {};
+  //here we will find the keyword from the user model
+  const users=await User.find(keyword).find({_id:{$ne:req.user._id}})
+  res.send(users)
+  // console.log(keyword);
+});
 
-})
-
-module.exports={registerUser,authUser}
+module.exports = { registerUser, authUser, allUsers };
