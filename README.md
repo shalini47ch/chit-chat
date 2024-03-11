@@ -32,6 +32,14 @@
 
 <img width="896" alt="image" src="https://github.com/shalini47ch/chit-chat/assets/60210475/ebd53787-306c-414e-97a1-c87436efc34f">
 
+## Group add functionality added
+
+<img width="862" alt="image" src="https://github.com/shalini47ch/chit-chat/assets/60210475/9680fe7a-f878-4d25-a9d5-dbabb20f1bae">
+
+<img width="669" alt="image" src="https://github.com/shalini47ch/chit-chat/assets/60210475/b072f190-d6bd-4fd4-af56-8148aef85adf">
+
+
+
 
 
 
