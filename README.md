@@ -14,5 +14,12 @@
 
 <img width="784" alt="image" src="https://github.com/shalini47ch/chit-chat/assets/60210475/d9f5987d-ac29-4025-bd22-ea3100e54c7a">
 
+## Access chats for the loggedin user and the user with specific id 
+<img width="889" alt="image" src="https://github.com/shalini47ch/chit-chat/assets/60210475/c1e58509-e7b1-4ca5-8ae9-1a53d13a046c">
+
+<img width="674" alt="image" src="https://github.com/shalini47ch/chit-chat/assets/60210475/f93f5bf5-bd3b-451d-bf65-777cec230fbd">
+
+
+
 
 
