@@ -19,6 +19,10 @@
 
 <img width="674" alt="image" src="https://github.com/shalini47ch/chit-chat/assets/60210475/f93f5bf5-bd3b-451d-bf65-777cec230fbd">
 
+## Fetch chats functionality added 
+<img width="614" alt="image" src="https://github.com/shalini47ch/chit-chat/assets/60210475/b0497697-2855-4aa4-9211-9170f6a9040f">
+
+
 
 
 
