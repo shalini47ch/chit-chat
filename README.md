@@ -28,6 +28,11 @@
 <img width="887" alt="image" src="https://github.com/shalini47ch/chit-chat/assets/60210475/3ebf8d50-997e-4962-922d-08803dc278f2">
 <img width="625" alt="image" src="https://github.com/shalini47ch/chit-chat/assets/60210475/dbcd8bd1-7bf0-4f7e-a9fb-91bd8e1a9217">
 
+## Rename group chat added
+
+<img width="896" alt="image" src="https://github.com/shalini47ch/chit-chat/assets/60210475/ebd53787-306c-414e-97a1-c87436efc34f">
+
+
 
 
 
