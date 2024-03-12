@@ -42,6 +42,11 @@
 
 <img width="886" alt="image" src="https://github.com/shalini47ch/chit-chat/assets/60210475/24a749ac-e773-42e6-9b6e-8d71efc81551">
 
+## Message sent successfully 
+
+<img width="676" alt="image" src="https://github.com/shalini47ch/chit-chat/assets/60210475/e45d85e8-90e8-428f-8b6d-7716994b60c4">
+
+
 
 
 
