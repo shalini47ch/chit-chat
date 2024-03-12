@@ -50,6 +50,11 @@
 
 <img width="885" alt="image" src="https://github.com/shalini47ch/chit-chat/assets/60210475/2268494b-af16-44fc-b492-97a07dba1acd">
 
+## All chats for a specific chat Id updated 
+
+<img width="895" alt="image" src="https://github.com/shalini47ch/chit-chat/assets/60210475/25d34a46-269e-4a06-b1a1-ecd851371564">
+
+
 
 
 
