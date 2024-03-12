@@ -46,6 +46,11 @@
 
 <img width="676" alt="image" src="https://github.com/shalini47ch/chit-chat/assets/60210475/e45d85e8-90e8-428f-8b6d-7716994b60c4">
 
+## Latest Message is getting updated 
+
+<img width="885" alt="image" src="https://github.com/shalini47ch/chit-chat/assets/60210475/2268494b-af16-44fc-b492-97a07dba1acd">
+
+
 
 
 
