@@ -11,7 +11,7 @@ const messageModel = mongoose.Schema(
   }
 );
 
-const Message = mongoose.model("message", messageModel);
+const Message = mongoose.model("Message", messageModel);
 module.exports = Message;
 
 //we need the sender which is belonging to our user,then we need a content of type string
