@@ -4,6 +4,9 @@ const {
   notFound,
   errorHandler,
 } = require("../backend/middleware/errorMiddleware");
+const cors = require('cors')
+
+app.use(cors()) // Use this after the variable declaration
 const dotenv = require("dotenv");
 const connectdb = require("./config/db");
 const app = express();
