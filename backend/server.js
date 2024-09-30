@@ -54,8 +54,8 @@ const server=app.listen(PORT, console.log(`Server starting on port ${PORT}`.cyan
 const io = require("socket.io")(server, {
   pingTimeout: 60000,
   cors: {
-    origin:"https://sensational-conkies-6a9e05.netlify.app/"
-    // origin: "http://localhost:3000",
+    // origin:"https://sensational-conkies-6a9e05.netlify.app/"
+    origin: "http://localhost:3000"
     // credentials: true,
   },
 });
